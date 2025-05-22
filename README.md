@@ -41,7 +41,8 @@ A fully reproducible version is presented in [`CG - All preconditioners - Repr &
 8. Figures 8 and 9 display the results of the batch training using bilevel optimisation on the included dataset.
 See notebook [`Scalar Training - ParaCats.ipynb`](8%20Scalar%20Training%20-%20ParaCats.ipynb). [👁️‍🗨️]
 
-9. Joint parameter optimisation (both $\lambda$ and $h = \sigma^{-2}$) is performed for improved quality in [Bilevel_2_Params - ParaCats](Bilevel_2_Params%20-%20ParaCats.ipynb). [👁️‍🗨️]
+9. Joint parameter optimisation (both $\lambda$ and $h = \sigma^{-2}$) is performed for improved quality in [Bilevel_2_Params - ParaCats](Bilevel_2_Params%20-%20ParaCats.ipynb). 
+This notebook depends on [`FastAdjacency2.0`](https://github.com/wagnertheresa/FastAdjacency2.0) [👁️‍🗨️]  for the derivative kernel.
 
 ---
 ## Dependencies
@@ -54,7 +55,7 @@ The notebooks with a [👁️‍🗨️] marker were adapted to
 
 
 
-A copy of the [`NFFT4ANOVA`](NFFT4ANOVA) library by Theresa Wagner (TU Chemnitz) is included in the folder. It depends on the [`FastAdjacency`](https://github.com/dominikbuenger/FastAdjacency) package by Dominik Alfke and the Julia interface of the [`NFFT3`](https://www-user.tu-chemnitz.de/~potts/nfft/) library. Refer to [`FastAdjacency`](https://github.com/dominikbuenger/FastAdjacency) for a comprehensive set of installation instructions.
+A copy of the [`NFFT4ANOVA`](NFFT4ANOVA) library by Theresa Wagner [@wagnertheresa](https://github.com/wagnertheresa) (TU Chemnitz) is included in the folder. It depends on the [`FastAdjacency`](https://github.com/dominikbuenger/FastAdjacency) package by Dominik Alfke and the Julia interface of the [`NFFT3`](https://www-user.tu-chemnitz.de/~potts/nfft/) library. Refer to [`FastAdjacency`](https://github.com/dominikbuenger/FastAdjacency) for a comprehensive set of installation instructions.
 
 In [`CG - All preconditioners - Repr & Chol`](CG%20-%20All%20preconditioners%20-%20Repr%20%26%20Chol.ipynb), a copy of `rpcholesky` and `accelerated_rpcholesky` was adapted from the [`Randomly Pivoted Cholesky`](
 https://github.com/eepperly/Randomly-Pivoted-Cholesky/tree/main) library by Yifan Chen, Ethan N. Epperly, Joel A. Tropp, and Robert J. Webber. Details on the algorithms are available in [[1]](https://doi.org/10.1002/cpa.22234) and [[2]](https://doi.org/10.48550/arXiv.2410.03969).
